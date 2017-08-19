@@ -25,3 +25,8 @@ An AWS Cloudwatch trigger will start the lambda three times a day, which make su
 The AWS SNS topic that will be used to send the message is configured to send an email ***and*** a SMS to my phone (SNS is awesome).
 
 If I still manage to forget about any of these I will really have no excuses...
+
+## A small bonus
+
+I've been playing with the AWS Gateway API to manage the DynamoDB table. I created the `AddBirthDay.py` to be used with this service. 
+A REST call can then be used to run the lambda and add an element to the table.
