@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     Important date format is { 'date': '<day>-<month', 'label': '<label_content>' }
 
     It is triggered by API Gateway and therefore returns
-    a proper body with status code and body
+    a proper body with status code
     """
     date_table = dynamodb.Table(DYNAMODB_TABLE)
 
